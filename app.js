@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Datos de prendas de ropa (simulados en JSON)
+    // Datos de prendas de ropa
     const ropa = [
         { id: 1, nombre: "Remera", precio: 20 },
         { id: 2, nombre: "Pantalón", precio: 40 },
@@ -35,10 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
         { id: 7, nombre: "Buzo", precio: 45 },
     ];
 
-    // Obtener el carrito almacenado en LocalStorage
+    // Obtener el carrito almacenado
     let itemsCarrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-    // Función para guardar el carrito en LocalStorage
+    // Función para guardar el carrito
     function guardarCarrito() {
         localStorage.setItem("carrito", JSON.stringify(itemsCarrito));
     }
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
         totalCarrito();
     }
 
-    // Cargar el carrito almacenado en LocalStorage
+    // Cargar el carrito almacenado
     mostrarCarrito();
 
     // Filtrar prendas por nombre
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Eliminar prenda del carrito con SweetAlert2 confirmación
+    // Eliminar prenda del carrito
     carrito.addEventListener("click", (event) => {
         if (event.target.tagName === "BUTTON") {
             const itemId = parseInt(event.target.getAttribute("data-id"));
