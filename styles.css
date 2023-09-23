@@ -1,0 +1,34 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Estilos para el tema claro */
+body.claro {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Estilos para el tema oscuro */
+body.oscuro {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+/* Estilos para las prendas de ropa */
+.clothing {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Estilos para el carrito de compras */
+#cart {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart li {
+    margin: 5px;
+}
